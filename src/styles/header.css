@@ -1,0 +1,121 @@
+.header {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: var(--color--primary);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    position: relative;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {    
+    .navigation {
+        height: var(--navigation--height);
+        padding-left: var(--space--xs);
+        padding-right: var(--space--xl);
+    }
+
+    .menu__links {
+        display: none; 
+    }
+
+    .logo {
+        height: 8rem;
+        width: 10rem;
+        margin-top: var(--space--s);
+    }
+
+    .menu__icon {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    .icon--close {
+        height: 0.1rem;
+        width: 0.1rem;
+        opacity: 0;
+    }
+
+    .icon--active {
+        height: 5rem;
+        width: auto;
+        opacity: 1;
+    }
+
+    .icon--inactive {
+        display: none;
+    }
+
+    .menu-hidden,
+    .menu-toggled main,
+    .menu-toggled footer {
+        width: 0.1rem;
+        height: 0.1rem;
+        opacity: 0;
+        overflow: hidden;
+        transition-property: opacity;
+        transition-duration: 0.3s;
+    }
+
+    .menu-active {
+        width: 100vw;
+        height: calc(100vh - var(--navigation--height));
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-image: url('../images/Subpages-images/hidden-menu-background.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;  
+        z-index: 3;
+        right: 0;
+        top: var(--navigation--height);
+        overflow: hidden;
+    }
+
+    .menu-active a {
+        color: var(--color--primary);
+    }
+}   
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .menu-hidden,
+    .menu__icon,
+    .icon--close {
+        display: none;
+    }
+
+    .logo {
+        margin-left:var(--space--l);
+    }
+
+    .menu__links a {
+        padding:var(--space--xl);
+        font-size: 2.8rem;
+    }
+
+    .menu__links a:last-of-type {
+        margin-right:var(--space--xl);
+    }
+}
+
+/* Desktop and tablet */
+@media only screen and (max-width: 1000px) {
+    .menu__links a {
+        font-size: 2rem;
+    }
+}

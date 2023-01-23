@@ -1,0 +1,17 @@
+#home,
+#offer,
+.contact {
+    padding-left: var(--space--m);
+    padding-right: var(--space--m);
+}
+
+#home,
+#offer {
+    padding-bottom: 5rem;
+
+}
+
+.contact {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}

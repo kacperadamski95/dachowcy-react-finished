@@ -1,0 +1,156 @@
+.realization__links {
+  z-index: 1;
+}
+
+.realizations--images img {
+  width: 100%;
+  height: auto;
+}
+
+#realizations p {
+  text-align: center;
+}
+
+.container p {
+  padding-top: var(--space--xs);
+  padding-bottom: var(--space--m);
+}
+
+.container {
+  position: relative;
+  border-radius: 1rem;
+  background: #EEF2E6;
+  color: var(--color--secondary);
+  margin-bottom:var(--space--xxl);
+  box-shadow: 10px 5px 5px #00000052;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
+}
+
+.left--button {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
+.right--button {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.right--button svg {
+  padding-left: 0.3rem;
+}
+
+.container div button {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+button:active {
+  transform: scale(1.02);
+}
+
+.background--realizations {
+  background-color: #EEF2E6;
+}
+
+.background--realizations h1 {
+  font-size: 2.2rem;
+  background-color: #EEF2E6;
+  color: var(--color--secondary);
+  padding: var(--space--xxl);
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  #realizations {
+    padding-top: var(--space--xxl);
+    padding-bottom: 5rem;
+    padding-left: var(--space--m);
+    padding-right: var(--space--m);
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--color--primary);
+    padding-top: var(--space--xxl);
+    padding-left: var(--space--m);
+    padding-right: var(--space--m);
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .slider__buttons {
+    width: 100%;
+  }
+
+  .left--button,
+  .right--button {
+    top: 35%;
+  }
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+  #realizations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 81%;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:var(--space--xxl);
+    max-width: 250rem;
+    margin-bottom: 13rem;
+    background-color: var(--color--primary);
+    border-radius: 2rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .container {
+    width: 60rem;
+    max-width: 60rem;
+  }
+
+  .slider__buttons {
+    width: 60rem;
+  }
+
+  .left--button,
+  .right--button {
+    top: 14rem;
+  }
+  
+}

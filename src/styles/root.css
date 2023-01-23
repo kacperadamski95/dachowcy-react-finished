@@ -1,0 +1,25 @@
+:root {
+    --color--primary: rgba(255, 251, 254, 1);
+    --color--secondary: rgba(22, 18, 18, 1);
+    --logo-theme--color: rgb(11,142,54, 1);
+    --font-family--primary: 'Poppins';
+    --font-family--secondary: 'Oranienbaum';
+    --font-size__h1--mobile: 3.2rem;
+    --font-size__h1--desktop: 4.8rem;
+    --font-size__h2: 2.4rem;
+    --font-size--base: 1.6rem;
+    --font-size__p--mobile: 1.4rem;
+    --font-size__p--desktop: 2rem;
+    --font-size__a--mobile: 3.2rem;
+    --font-size__a--desktop: 3rem;
+    --font-weight--normal: 400;
+    --navigation--height: 9rem;
+    --input-width--desktop: 40rem;
+    --textarea-width--desktop: 40rem;
+    --space--xs: 0.5rem;
+    --space--s: 1rem;
+    --space--m: 1.5rem;
+    --space--l: 2rem;
+    --space--xl: 2.5rem;
+    --space--xxl: 3rem;
+}

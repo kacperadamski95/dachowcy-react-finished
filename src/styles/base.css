@@ -1,0 +1,125 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: var(--font-family--primary), Arial, Helvetica, sans-serif;
+}
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: var(--font-weight--normal);
+    color: var(--color--primary);
+}
+
+h3 {
+    font-weight: var(--font-weight--normal);
+}
+
+a {
+    text-decoration:none;
+    font-style: normal;
+}
+
+a:hover,
+a:focus,
+a:active,
+.address--links:hover {
+    color: var(--logo-theme--color);
+    cursor: pointer;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
+li::marker {
+    color: var(--logo-theme--color);
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .main--router {
+        background-image: url('../images/Subpages-images/mobile-background.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: var(--font-size__h1--mobile);
+        padding-bottom:var(--space--xxl);
+    }
+
+    h2 {
+        font-size: var(--font-size__h2);
+    }
+
+    p {
+        font-size: var(--font-size__p--mobile);
+    }
+
+    li {
+        font-size: var(--font-size__p--mobile);
+    }
+
+    a {
+       font-size: var(--font-size__a--mobile);
+       color: var(--color--secondary);
+    }
+
+    input {
+        width: 100%;   
+    }
+    
+    textarea {
+        width: 100%;
+    }
+}
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .main--router {
+        background-image: url('../images/Subpages-images/roof-opacity-desktop.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: var(--font-size__h1--desktop);
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    h2 {
+        font-size: var(--font-size__h2);
+    }
+
+    p {
+        font-size: var(--font-size__p--desktop);
+    }
+
+    li {
+        font-size: var(--font-size__p--desktop);
+    }
+
+    a {
+        font-size: var(--font-size__a--desktop);
+        color: var(--color--secondary);
+    }
+
+    input {
+        width: var(--input-width--desktop);
+    }
+
+    textarea {
+        width: var(--textarea-width--desktop);
+    }
+
+
+}

@@ -1,0 +1,58 @@
+#ff-compose{
+    height:100%;
+    margin:auto;
+}
+
+[class="btn btn-lg btn-primary"] {
+    display: none;
+}
+
+#ff-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: var(--space--m);
+}
+
+#ff-success {
+    font-size: 2.2rem;
+}
+
+.ff-form .ff-powered-img {
+    width: 0.1rem !important;
+    height: 0.1rem !important;
+}
+
+[src="https://formfacade.com/logo/madewith/formfacade.svg"],
+.ff-partial {
+    display: none !important;
+}
+
+.form-check-input {
+    width: 5%;
+}
+
+.ff-description > div:nth-of-type(2) {
+    display: none;
+}
+
+.ff-form,
+.ff-required {
+    color: var(--color--secondary)!important;
+}
+
+#Publish1FAIpQLSfVlF43KcO1mhpO0I9EZcau2S7NZqhLsxsGEtVV1SbbHUft_w {
+    background-color: var(--color--primary)!important;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    #ff-compose{
+        width:90%;
+    }
+
+    #Publish1FAIpQLSfVlF43KcO1mhpO0I9EZcau2S7NZqhLsxsGEtVV1SbbHUft_w {
+        padding: var(--space--m);
+    }
+}

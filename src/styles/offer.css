@@ -1,0 +1,102 @@
+.offer__tiles > article:hover {
+    background-color: #EEF2E6;
+    box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.9);
+    scale: 1.05;
+    
+}
+
+
+#offer div img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+
+.material--wood,
+.material--tile,
+.material--tinware,
+.material--mug,
+.material--flashings,
+.material--windows {
+    background-color: var(--color--primary);
+    padding-top: var(--space--l);
+    padding-bottom: var(--space--xl);
+    padding-left: var(--space--l);
+    padding-right: var(--space--xl);
+    border-radius: 1rem;
+}
+
+.tile__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--space--s);
+}
+
+#offer div > div > p {
+    padding-left: var(--space--xs);
+}
+
+.tile__title h2 {
+    font-weight: var(--font-weight--normal);
+    padding-left: var(--space--m);
+}
+
+ul {
+    margin-left: var(--space--xs);
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    #offer {
+    display: grid;
+    place-items: center;
+    padding-top: var(--space--xxl);
+    padding-bottom: 10rem;
+    padding-left: var(--space--m);
+    padding-right: var(--space--m);
+    }
+
+    .material--wood,
+    .material--tile,
+    .material--tinware,
+    .material--mug,
+    .material--flashings,
+    .material--windows {
+        height: fit-content;
+        line-height: 2.5rem;
+        margin-bottom: 4rem;
+    }
+}    
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    #offer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #offer p,
+    #offer li {
+        font-size: var(--font-size--base);
+    }
+
+    .material--wood,
+    .material--tile,
+    .material--tinware,
+    .material--mug,
+    .material--flashings,
+    .material--windows {
+        line-height: 2.8rem;
+        width: 40rem;
+    }
+
+    .offer__tiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 156rem;
+        gap: 18rem;
+        margin-bottom: 13rem;
+    }
+}

@@ -87,6 +87,11 @@ button:active {
     padding-left: var(--space--m);
     padding-right: var(--space--m);
   }
+
+  .background--realizations h1 {
+    font-size: var(--font-size--base);
+    text-align: left;
+  }
   
   .slider {
     display: flex;

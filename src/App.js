@@ -19,14 +19,14 @@ function App() {
           <main className="main--router">
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Offer" element={<Offer />} />
-            <Route path="/Contact" element={<Contact />} />
-            <Route path="/Realizations" element={<Realizations />} />
-            <Route path="/realization1" element={<Realization1 />} />
-            <Route path="/realization2" element={<Realization2 />} />
-            <Route path="/realization3" element={<Realization3 />} />
-            <Route path="/realization4" element={<Realization4 />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/oferta" element={<Offer />} />
+            <Route path="/kontakt" element={<Contact />} />
+            <Route path="/realizacje" element={<Realizations />} />
+            <Route path="/realizacje/kwidzyn" element={<Realization1 />} />
+            <Route path="/realizacje/chelmno" element={<Realization2 />} />
+            <Route path="/realizacje/pruszcz-gdanski" element={<Realization3 />} />
+            <Route path="/realizacje/sztutowo" element={<Realization4 />} />
           </Routes>
           </main>
           <Footer />

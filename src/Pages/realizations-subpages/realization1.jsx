@@ -1,8 +1,8 @@
-import React from 'react';
-import sliderData from '../../data/sliderData';
-import { useEffect, useState } from 'react';
+import React from "react";
+import sliderData from "../../data/sliderData";
+import { useEffect, useState } from "react";
 
-function MyImage({src, index, sliderImagesMobile, sliderImagesAlts}) {
+function MyImage({ src, index, sliderImagesMobile, sliderImagesAlts }) {
   const [imageUrl, setImageUrl] = useState(src);
 
   useEffect(() => {
@@ -28,23 +28,30 @@ function MyImage({src, index, sliderImagesMobile, sliderImagesAlts}) {
   );
 }
 const realization1 = () => {
-    const { sliderDescription, sliderImages, sliderImagesMobile, sliderImagesAlts } = sliderData[0];
-    return (
-        <section className="section--background background--realizations">
-            <h1>{sliderDescription}</h1>
-            <div className="realizations--images">
-                {sliderImages.map((src, index) => (
-                    <MyImage
-                      key={index}
-                      src={src}
-                      index={index}
-                      sliderImagesMobile={sliderImagesMobile}
-                      sliderImagesAlts={sliderImagesAlts}
-                    />
-                ))}
-            </div>
-        </section>
-    );
-}
+  const {
+    sliderDescription,
+    sliderHeadlight,
+    sliderImages,
+    sliderImagesMobile,
+    sliderImagesAlts,
+  } = sliderData[0];
+  return (
+    <section className="section--background background--realizations">
+      <h1><strong>{sliderHeadlight}</strong></h1>
+      <p>{sliderDescription}</p>
+      <div className="realizations--images">
+        {sliderImages.map((src, index) => (
+          <MyImage
+            key={index}
+            src={src}
+            index={index}
+            sliderImagesMobile={sliderImagesMobile}
+            sliderImagesAlts={sliderImagesAlts}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default realization1;

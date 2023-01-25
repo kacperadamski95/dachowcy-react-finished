@@ -30,13 +30,15 @@ function MyImage({ src, index, sliderImagesMobile, sliderImagesAlts }) {
 const realization3 = () => {
   const {
     sliderDescription,
+    sliderHeadlight,
     sliderImages,
     sliderImagesMobile,
     sliderImagesAlts,
   } = sliderData[2];
   return (
     <section className="section--background background--realizations">
-      <h1>{sliderDescription}</h1>
+      <h1><strong>{sliderHeadlight}</strong></h1>
+      <p>{sliderDescription}</p>
       <div className="realizations--images">
         {sliderImages.map((src, index) => (
           <MyImage

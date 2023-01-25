@@ -53,6 +53,7 @@
     
     .main-page__picture {
         margin-top: 5rem;
+        border-radius: 1%;
     }
     
     .about-us {

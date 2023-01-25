@@ -2,11 +2,6 @@
   z-index: 1;
 }
 
-.realizations--images img {
-  width: 100%;
-  height: auto;
-}
-
 #realizations p {
   text-align: center;
 }
@@ -89,8 +84,22 @@ button:active {
   }
 
   .background--realizations h1 {
-    font-size: var(--font-size--base);
-    text-align: left;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .background--realizations p {
+    padding-bottom: var(--space--s);
+  }
+
+  .background--realizations {
+    padding: var(--space--s);
+  }
+
+  .realizations--images img {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
   }
   
   .slider {
@@ -128,6 +137,17 @@ button:active {
     width: 81%;
     margin-bottom: 5rem;
     border-radius: 2rem;
+  }
+
+  .background--realizations p {
+    padding: 0 var(--space--l) var(--space--l) ;
+  }
+
+  .realizations--images img {
+    width: 50%;
+    height: auto;
+    border: 3px solid #EEF2E6;
+    border-radius: 1%;
   }
 
   .slider {

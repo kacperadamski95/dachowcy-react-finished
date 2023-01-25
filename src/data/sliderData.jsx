@@ -36,7 +36,8 @@ const sliderData = [
             "kwidzyn11",
         ],
         sliderShortDescription: 'Kwidzyn, Pensjonat Willa Miłosna - remont dachu, dachówka Ceramiczna Klasztorna',
-        sliderDescription: 'Kwidzyn, Pensjonat Willa Miłosna - naszym zadaniem było przeprowadzenie remontu dachu zabytkowego budynku pensjonatu Willa Miłosna położonego na obszarze Terenów Rekreacyjnych Miłosna w Kwidzynie. Prace odbywały się pod nadzorem Wojewódzkiego Konserwatora Zabytków. Po zdemontowaniu starej dachówki, przystąpiliśmy do wymiany uszkodzonych elementów więźby dachowej oraz zbudowaniu konstrukcji nowych elementów - (Lukarny, Bawole Oka). Wstawiliśmy również okna dachowe, które w razie potrzeby mają pełnić funkcję oddymiającą. Następnie przyszła pora na pokrycie dachu dachówką ceramiczną typu - Klasztorna. Dopełnieniem prac była podbitka dachowa, wykonana według wymagań konserwatorskich.'
+        sliderHeadlight: 'Kwidzyn - pensjonat Willa Miłosna',
+        sliderDescription: 'Naszym zadaniem było przeprowadzenie remontu dachu zabytkowego budynku pensjonatu Willa Miłosna położonego na obszarze Terenów Rekreacyjnych Miłosna w Kwidzynie. Prace odbywały się pod nadzorem Wojewódzkiego Konserwatora Zabytków. Po zdemontowaniu starej dachówki, przystąpiliśmy do wymiany uszkodzonych elementów więźby dachowej oraz zbudowaniu konstrukcji nowych elementów - (Lukarny, Bawole Oka). Wstawiliśmy również okna dachowe, które w razie potrzeby mają pełnić funkcję oddymiającą. Następnie przyszła pora na pokrycie dachu dachówką ceramiczną typu - Klasztorna. Dopełnieniem prac była podbitka dachowa, wykonana według wymagań konserwatorskich.'
     },
     {
         sliderAnchorHref: "/realizacje/chelmno",
@@ -60,7 +61,8 @@ const sliderData = [
             "chelmno6",
         ],
         sliderShortDescription: 'Chełmno - Szkoła katolicka - remont, wymiana poszycia dachowego, dach wielopoziomowy, blachodachówka na rąbek stojący',
-        sliderDescription: 'Chełmno - remont dachu zespołu szkół, polegający na wymianie pokrycia dachowego. Dach wielopoziomowy pokryty był pierwotnie eternitem. Remont polegał na demontażu eternitu i jego utylizacji, montażu membrany, kontrłat i łat w sposób wymagany do pokrycia jakim jest blachodachówka na rąbek stojący. Oprócz tego wykonaliśmy wszystkie obróbki blacharskie, zainstalowaliśmy rynny i rury spustowe. Dopełnieniem była drewniana podbitka dachowa.'
+        sliderHeadlight: 'Chełmno - remont dachu zespołu szkół',
+        sliderDescription: 'Polegał na wymianie pokrycia dachowego. Dach wielopoziomowy pokryty był pierwotnie eternitem. Remont polegał na demontażu eternitu i jego utylizacji, montażu membrany, kontrłat i łat w sposób wymagany do pokrycia jakim jest blachodachówka na rąbek stojący. Oprócz tego wykonaliśmy wszystkie obróbki blacharskie, zainstalowaliśmy rynny i rury spustowe. Dopełnieniem była drewniana podbitka dachowa.'
     },
     {
         sliderAnchorHref: "/realizacje/pruszcz-gdanski",
@@ -114,7 +116,8 @@ const sliderData = [
             "pruszcz16",
         ],
         sliderShortDescription: 'Pruszcz Gdański - Komenda Powiatowa Policji - budowa więźby dachowej, dachówka ceramiczna karpiówka',
-        sliderDescription: 'Pruszcz Gdański - budowa dachu na nowym budynku siedziby Komendy Powiatowej Policji. Postawienie krokwiowej więźby dachowej, montaż dachowych okien kolankowych. Pokrycie dachu dachówką ceramiczną Karpiówką na koronkę.'
+        sliderHeadlight: 'Pruszcz Gdański - budynek siedziby Komendy Powiatowej Policji',
+        sliderDescription: 'Budowa dachu na nowym budynku - postawienie krokwiowej więźby dachowej, montaż dachowych okien kolankowych. Pokrycie dachu dachówką ceramiczną Karpiówką na koronkę.'
     },
     {
         sliderAnchorHref: "/realizacje/sztutowo",
@@ -150,7 +153,8 @@ const sliderData = [
             "sztutowo10",
         ],
         sliderShortDescription: 'Sztutowo - Polomarket - budowa więźby dachowej, dachówka ceramiczna, podbitka drewniana',
-        sliderDescription: 'Sztutowo - Polomarket - budowa więźby dachowej, dachówka ceramiczna, podbitka drewniana'
+        sliderHeadlight: "Sztutowo - Polomarket",
+        sliderDescription: 'Budowa więźby dachowej, dachówka ceramiczna, podbitka drewniana'
     }
 ]
 

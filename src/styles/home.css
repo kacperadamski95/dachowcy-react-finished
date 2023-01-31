@@ -79,8 +79,16 @@
 }
 
 /* Desktop and tablet */
-@media only screen and (max-width: 1691px) {
+@media only screen and (max-width: 1695px) {
     .main-page__picture {
         margin-top: -7rem;
+    }
+}
+
+/* Desktop and tablet */
+@media only screen and (max-width: 1000px) {
+    .main-page__picture {
+        width: 40rem;
+        height: 50.6rem;
     }
 }

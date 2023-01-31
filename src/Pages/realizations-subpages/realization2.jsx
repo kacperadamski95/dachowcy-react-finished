@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import sliderData from "../../data/sliderData";
 import { useEffect, useState } from "react";
 
@@ -36,23 +37,34 @@ const realization2 = () => {
     sliderImagesAlts,
   } = sliderData[1];
   return (
-    <section className="section--background background--realizations">
-      <h1><strong>{sliderHeadlight}</strong></h1>
-      <p>{sliderDescription}</p>
-      <div className="realizations--images">
-        {sliderImages.map((src, index) => (
-          <MyImage
-            width="100%"
-            height="auto"
-            key={index}
-            src={src}
-            index={index}
-            sliderImagesMobile={sliderImagesMobile}
-            sliderImagesAlts={sliderImagesAlts}
-          />
-        ))}
-      </div>
-    </section>
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <link rel="canonical" href={`https://dachowcy.com/realizacje/chelmno`} />
+          <title>Realizacja Chełmno - Dachowcy</title>
+          <meta name="description" content="Sprawdź realizację wykonaną w Chełmnie - budowa ogromnego, wielopoziomowego dachu pokrytego pierwotnie eternitem."/>
+          <meta name="keywords" content="dach, dekarz, firma dekarska, budowa dachu, remont dachu, dach wielopoziomowy, demontaż eternitu, utylizacja eternitu, 
+          blachodachówka, rąbek stojący, łaty, kontrłaty, obróbki blacharskie, rynny, drewniana podbitka dachowa"/>  
+        </Helmet>
+      </HelmetProvider>
+      <section className="section--background background--realizations">
+        <h1><strong>{sliderHeadlight}</strong></h1>
+        <p>{sliderDescription}</p>
+        <div className="realizations--images">
+          {sliderImages.map((src, index) => (
+            <MyImage
+              width="100%"
+              height="auto"
+              key={index}
+              src={src}
+              index={index}
+              sliderImagesMobile={sliderImagesMobile}
+              sliderImagesAlts={sliderImagesAlts}
+            />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

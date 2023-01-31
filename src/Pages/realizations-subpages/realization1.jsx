@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import sliderData from "../../data/sliderData";
 import { useEffect, useState } from "react";
 
@@ -36,21 +37,31 @@ const realization1 = () => {
     sliderImagesAlts,
   } = sliderData[0];
   return (
-    <section className="section--background background--realizations">
-      <h1><strong>{sliderHeadlight}</strong></h1>
-      <p>{sliderDescription}</p>
-      <div className="realizations--images">
-        {sliderImages.map((src, index) => (
-          <MyImage
-            key={index}
-            src={src}
-            index={index}
-            sliderImagesMobile={sliderImagesMobile}
-            sliderImagesAlts={sliderImagesAlts}
-          />
-        ))}
-      </div>
-    </section>
+    <>
+      <HelmetProvider>
+        <Helmet>
+          <link rel="canonical" href={`https://dachowcy.com/realizacje/kwidzyn`} />
+          <title>Realizacja Kwidzyn - Dachowcy</title>
+          <meta name="description" content="Sprawdź wykonaną przez nas realizację w Kwidzynie pod okiem konswerwatora. Nasza realizacja flagowa."/>
+          <meta name="keywords" content="dach, dekarz, firma dekarska, budowa dachu, remont dachu, remont dachu zabytkowego, dachówka, dachówka ceramiczna, więźba dachowa, konserwator zabytków"/>  
+        </Helmet>
+      </HelmetProvider>
+      <section className="section--background background--realizations">
+        <h1><strong>{sliderHeadlight}</strong></h1>
+        <p>{sliderDescription}</p>
+        <div className="realizations--images">
+          {sliderImages.map((src, index) => (
+            <MyImage
+              key={index}
+              src={src}
+              index={index}
+              sliderImagesMobile={sliderImagesMobile}
+              sliderImagesAlts={sliderImagesAlts}
+            />
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

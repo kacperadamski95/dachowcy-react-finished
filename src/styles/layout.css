@@ -14,3 +14,17 @@
     padding-bottom: 10rem;
     padding-top: 10rem;
 }
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding-top: var(--space--xxl);
+    }
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .contact {
+        padding-top: 0;
+    }
+}

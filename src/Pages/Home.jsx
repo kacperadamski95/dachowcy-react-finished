@@ -1,13 +1,23 @@
 import React from 'react';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Home = () => {
     return (
         <>
+            <HelmetProvider>
+                <Helmet>
+                    <link rel="canonical" href={`https://dachowcy.com/`} />
+                    <title>Dachy, remont i budowa dachów, Pomorskie - Firma dekarska Dachowcy</title>
+                    <meta name="description" content="Strona internetowa Dachowcy - świadczymy usługi dekarskie w województwie Pomorskim i okolicach dla klientów indywidualnych oraz przedsiębiorców."/>
+                    <meta name="keywords" content="Dachowcy, województwo Pomorskie, dach, dekarz, firma dekarska, budowa dachu, remont dachu, przedsiębiorcy, klienci indywidualni, 
+                    więźba dachowa, dachówka, papa, blacha"/>  
+                </Helmet>
+            </HelmetProvider>
             <section id="home" className="main-page section--background">
                 <h1>O nas</h1>
                 <article className="about-us">
                     <div className="text--information">
-                        <p><strong>Dachy</strong> to nasza specjalność. <strong>Remontujemy</strong> i <strong>budujemy</strong> dachy od wielu lat.
-                            Jesteśmy rodzinną firmą, działająca głównie na terenie <strong>województwa pomorskiego</strong>,
+                        <p><strong>Dachy</strong> to nasza specjalność. <strong>Remontujemy</strong> i <strong>budujemy</strong> dachy od wielu lat. <strong>Dachowcy</strong> są 
+                            rodzinną firmą, działająca głównie na terenie <strong>województwa pomorskiego</strong>,
                             choć zdarzało się, że podejmowaliśmy się realizacji inwestycji poza granicami naszego
                             województwa, głównie w województwach ościennych.
                             Nasze usługi świadczymy zarówno <strong>dużym przedsiębiorcom</strong>, jak i <strong>indywidualnym klientom</strong>.
